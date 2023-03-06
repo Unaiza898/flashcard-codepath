@@ -1,0 +1,58 @@
+.App {
+  width: 100vw;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.container{
+  text-align: center;
+  width: 90%;
+
+}
+
+
+
+.card{
+  /* background-color: aqua; */
+  width: 500px;
+  height: 300px;
+  justify-content: center;
+  display: flex;
+  
+  margin: 20px;
+  padding: 4rem;
+  /* position: relative; */
+
+}
+
+.side{
+
+  position: absolute;
+  height: 200px;
+  background-color: white;
+  width: 450px;
+  backface-visibility: hidden;
+  font-size: 40px;
+  text-align: center;
+ padding-top: 100px;
+}
+
+.side.back {
+  transform: rotateY(-180deg);
+}
+
+
+.card:hover .side.front {
+  transform: rotateY(180deg);
+}
+
+.card:hover .side.back {
+  /* transform: rotateY(180deg); */
+  transform: rotateY(-180deg);
+  transform: rotateY(var(--rotate-y, 0));
+  transform-style: preserve-3d;
+  transition: 1500ms;
+  cursor: pointer;
+  transform: perspective(5000px) rotateY(var(--rotate-y, 0)) translateY(var(--translate-y, 0));
+}
