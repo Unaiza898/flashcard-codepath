@@ -13,16 +13,26 @@ import React from 'react';
 //     transform: perspective(5000px) rotateY(var(--rotate-y, 0)) translateY(var(--translate-y, 0));
 //   }
 
-// document.querySelector('.card').addEventListener('click', () => {
-//     document.querySelector('#foo').toggleClass('myClass');
-//   }); 
+var flash = document.querySelectorAll('.card');
+
+// [...flash].forEach((card)=>{
+//   card.addEventListener( 'click', function() {
+//     card.classList.toggle('is-flipped');
+//   });
+// });
+
+const handleClick = event => {
+    // 👇️ toggle class on click
+    event.currentTarget.classList.toggle('is-flipped');
+
+ };
 
 
 const cards = (props) => {
     return (
-        <div className='card'>
-                 <div className='side front '>
-                    {props.id}
+        <div   className='card' onClick={handleClick}>
+                 <div  id = {props.level}  className='side front '>
+                  
                 {props.front}
            
             </div>
@@ -32,7 +42,10 @@ const cards = (props) => {
             </div>
 
 
+
         </div>
+
+
     )
 }
 
