@@ -1,4 +1,4 @@
-# Web Development Project 2 - *Name of App Here*
+# Web Development Project 2 - *Flashcard part 1 *
 
 Submitted by: **Your Name Here**
 
