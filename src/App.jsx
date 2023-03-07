@@ -54,7 +54,6 @@ function App() {
       <h4> How good of a plant parent are you fjkfjgkfjkg jfk gkfjg kf</h4>
       <h4> How good of a plant parent are you fjkfjgkfjkg jfk gkfjg kf</h4>
 
-      {/* <Cards    /> */}
 
       <Cards
         level={flashcard[counter].level}
