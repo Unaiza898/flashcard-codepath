@@ -11,3 +11,28 @@ background-image: url(https://img.freepik.com/free-vector/gradient-network-conne
 html {
   overflow-x: hidden;
 }
+
+
+.guess , .correct, .wrong{
+
+line-height: 24px;
+margin-left: 15px;
+opacity: 70%;
+margin-bottom: 10px;;
+
+}
+
+.correct{
+
+background-color: green;
+}
+
+.wrong{
+
+  background-color: red;
+  }
+  .shuffle{
+    opacity: 70%;
+
+    height: 25px;
+  }
